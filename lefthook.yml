@@ -1,0 +1,4 @@
+pre-commit:
+  parallel: true
+  stage_fixed: true
+# TODO

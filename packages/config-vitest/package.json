@@ -1,0 +1,21 @@
+{
+  "name": "@repo/config-vitest",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "check-types": "tsc --noEmit",
+    "clean": "git clean -xdf dist node_modules .turbo"
+  },
+  "dependencies": {
+    "vitest": "catalog:tools"
+  },
+  "devDependencies": {
+    "@repo/config-typescript": "workspace:*",
+    "typescript": "catalog:tools"
+  }
+}
