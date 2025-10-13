@@ -8,7 +8,7 @@ import {
 
 import { queryClient } from "@/base/query-client";
 
-import "./index.css";
+import "./styles.css";
 
 export interface RouterContextValue {
   queryClient: QueryClient;
