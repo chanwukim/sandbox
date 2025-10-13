@@ -1,6 +1,16 @@
+import { defineProject, mergeConfig } from "vitest/config";
+
 export const sharedConfig = {
   test: {
     globals: true,
-    environment: "jsdom",
   },
 };
+
+export const uiConfig = mergeConfig(
+  sharedConfig,
+  defineProject({
+    test: {
+      environment: "jsdom",
+    },
+  }),
+);
